@@ -74,6 +74,19 @@
         <!-- end::dependencies_test[] -->
     </dependencies>
     <!-- end::dependencies[] -->
+    <!-- tag::profiles[] -->
+    <profiles>
+	<profile>
+	    <id>sonar</id>
+	        <activation>
+		    <activeByDefault>true</activeByDefault>
+		</activation>
+	    <properties>
+		    <sonar.host.url>http://sonarqube.example.gov.nt.ca:9000</sonar.host.url>
+	    </properties>
+	</profile>
+    </profiles>
+    <!-- end::profiles[] -->
     <!-- tag::build[] -->
     <build>
         <plugins>
