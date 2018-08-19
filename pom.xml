@@ -14,6 +14,12 @@
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <!-- end::coordinates[] -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+	    <url>http://nexus.example.gov.nt.ca:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
     <!-- tag::properties[] -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -157,7 +163,7 @@
                 </executions>
             </plugin>
             <!-- end::build_test[] -->
-        </plugins>
+    	</plugins>
     </build>
     <!-- end::build[] -->
 
